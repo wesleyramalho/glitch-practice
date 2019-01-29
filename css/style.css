@@ -28,3 +28,19 @@ body {
   background-color: #d85275;
   display: flex;
   justify-content: center; }
+  .container__glitch {
+    font-size: 130px;
+    line-height: 1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    position: absolute;
+    color: #fff; }
+    .container__glitch:before, .container__glitch:after {
+      display: block;
+      content: attr(data-label);
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0.8; }
