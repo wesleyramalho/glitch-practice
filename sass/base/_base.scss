@@ -1,0 +1,13 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  height: 2000px;
+  position: relative;
+}
