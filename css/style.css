@@ -20,6 +20,7 @@ body {
   position: relative;
   animation: light 0.5s ease-in-out; }
   .container__glitch {
+    user-select: none;
     animation: dark 0.5s ease-in-out;
     font-size: 6rem;
     line-height: 1;
