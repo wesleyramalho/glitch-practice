@@ -12,7 +12,22 @@
   );
   position: relative;
   animation: light 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  &__subtitle {
+    margin-top: 12rem;
+    color: $color-white;
+    animation: dark 0.5s ease-in-out;
+    font-family: "Major Mono Display", monospace;
+    font-size: 1rem;
+
+    @media screen and (max-width: 475px) {
+      margin-top: 7rem;
+      font-size: 0.6rem ;
+    }
+  }
   &__glitch {
     @media screen and (max-width: 475px) {
       font-size: 2rem !important;
