@@ -16,9 +16,11 @@ body {
 
 .container {
   height: 100%;
-  background-color: #2B0059;
-  position: relative; }
+  background-image: linear-gradient(45deg, #2B0059 35%, #d85275 80%, #92688b 95%);
+  position: relative;
+  animation: light 0.5s ease-in-out; }
   .container__glitch {
+    animation: dark 0.5s ease-in-out;
     font-size: 6rem;
     line-height: 1;
     font-family: "Major Mono Display", monospace;
@@ -56,9 +58,37 @@ body {
     .container__glitch:hover:after {
       animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite; }
     .container__glitch:before {
-      animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.6s; }
+      animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
     .container__glitch:after {
-      animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both 0.6s; }
+      animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both; }
+
+@keyframes light {
+  0% {
+    background-image: linear-gradient(to right, #fff, #fff); }
+  20% {
+    background-image: linear-gradient(to right, #fff, #fff); }
+  40% {
+    background-image: linear-gradient(to right, #fff, #fff); }
+  60% {
+    background-image: linear-gradient(to right, #fff, #fff); }
+  80% {
+    background-image: linear-gradient(to right, #fff, #fff); }
+  to {
+    background-image: linear-gradient(45deg, #2B0059 35%, #d85275 80%, #92688b 95%); } }
+
+@keyframes dark {
+  0% {
+    color: #000; }
+  20% {
+    color: #000; }
+  40% {
+    color: #000; }
+  60% {
+    color: #000; }
+  80% {
+    color: #000; }
+  to {
+    color: #fff; } }
 
 @keyframes glitch {
   0% {
@@ -73,3 +103,6 @@ body {
     transform: translate(5px, -5px); }
   to {
     transform: translate(0); } }
+
+.color-grey {
+  color: #919191; }
